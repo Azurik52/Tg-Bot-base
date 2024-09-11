@@ -6,7 +6,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Здравствуй {update.effective_user.first_name}')#cообщение с именем
 
 
-app = ApplicationBuilder().token("6791696865:AAHtip93oQHMEYZ2_mg3lwIE4bxE61MtKds").build()#Токен бота. Для проверки нужно запустить и написать @teaeeeebot в тг
+app = ApplicationBuilder().token("Your bot TOKEN").build()#Токен бота. Д
 
 app.add_handler(CommandHandler("start", start)) #декларация команды /start
 
